@@ -4,9 +4,7 @@ import java.security.SecureRandom;
 
 public class Horse extends Animal{
 
-    @Override
-    public int getSpeed() {
-
-        return new SecureRandom().nextInt(75);
+    public Horse() {
+        super(75);
     }
 }
