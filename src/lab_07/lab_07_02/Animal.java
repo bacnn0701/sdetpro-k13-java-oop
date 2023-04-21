@@ -8,7 +8,7 @@ public class Animal {
 
     public Animal(int maxSpeed) {
 
-        speed = new SecureRandom().nextInt(maxSpeed);
+        this.speed = new SecureRandom().nextInt(maxSpeed);
     }
 
     public int getSpeed() {
