@@ -1,9 +1,8 @@
 package lab_08;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-
 import static lab_08.Animal.*;
+
 public class TestAnimal {
 
     public static void main(String[] args) {
