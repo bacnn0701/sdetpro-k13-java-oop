@@ -1,6 +1,8 @@
 package lab_08;
 
 import java.util.Arrays;
+import java.util.List;
+
 import static lab_08.Animal.*;
 
 public class TestAnimal {
@@ -35,5 +37,8 @@ public class TestAnimal {
 
         System.out.println(controllerAnimal.findWinnerAnimal(Arrays.asList(horse,eagle,falcon,snake,cat,dog)));
 
+        System.out.println(controllerAnimal.findWinnerAnimal(List.of()));
+
+        System.out.println(controllerAnimal.findWinnerAnimal(List.of(eagle)));
     }
 }

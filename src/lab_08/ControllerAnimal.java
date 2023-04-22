@@ -9,18 +9,26 @@ public class ControllerAnimal {
 
         List<Animal> listAnimalCompetition = new ArrayList<>();
 
-        for (Animal animal : animals) {
-            if (!animal.isFlyable()) {
-                listAnimalCompetition.add(animal);
+        if (!animals.isEmpty()) {
+            for (Animal animal : animals) {
+                if (!animal.isFlyable()) {
+                    listAnimalCompetition.add(animal);
+                }
             }
+        } else {
+            return "No have any animals to compete";
         }
 
         int largestSpeedIndex = 0;
-        for (int i = 1; i < listAnimalCompetition.size(); i++) {
+        if (!listAnimalCompetition.isEmpty()) {
+            for (int i = 1; i < listAnimalCompetition.size(); i++) {
 
-            if (listAnimalCompetition.get(i).getSpeed() > listAnimalCompetition.get(largestSpeedIndex).getSpeed()) {
-                largestSpeedIndex = i;
+                if (listAnimalCompetition.get(i).getSpeed() > listAnimalCompetition.get(largestSpeedIndex).getSpeed()) {
+                    largestSpeedIndex = i;
+                }
             }
+        } else {
+            return "No have any animals enough the conditions to compete";
         }
 
         return "Winner Animal is "
