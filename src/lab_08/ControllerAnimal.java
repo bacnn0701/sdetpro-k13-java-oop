@@ -44,7 +44,7 @@ public class ControllerAnimal {
                                     .filter(s -> s.getSpeed() == maxSpeedWinner)
                                     .toList();
 
-        // Find return animals winner with the max speed
+        // Return animals winner with the max speed
 
         return String.format("Winner Animal is %s with speed: %d",
                 animalWinner.stream().map(Animal::getName).collect(Collectors.joining(", ")),
