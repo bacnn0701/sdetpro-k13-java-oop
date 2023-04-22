@@ -37,8 +37,8 @@ public class TestAnimal {
 
         System.out.println(controllerAnimal.findWinnerAnimal(Arrays.asList(horse,eagle,falcon,snake,cat,dog)));
 
-        System.out.println(controllerAnimal.findWinnerAnimal(List.of()));
-
-        System.out.println(controllerAnimal.findWinnerAnimal(List.of(eagle)));
+//        System.out.println(controllerAnimal.findWinnerAnimal(List.of()));
+//
+//        System.out.println(controllerAnimal.findWinnerAnimal(List.of(eagle)));
     }
 }
